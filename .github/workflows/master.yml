@@ -33,7 +33,7 @@ jobs:
       run: npm run build
 
     - name: Deploy to Github Pages
-      uses: peaceiris/actions-git-page@v4
+      uses: peaceiris/actions-gh-pages@v4
       with: 
         github_token: $ {{secrets.Repo_Secrets}}
         publish_dir: ./build
