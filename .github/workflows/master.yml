@@ -24,6 +24,7 @@ jobs:
         cache: npm
 
     - name: Install Dependencies
+      working-directory: ./Portfolio_Dummy_Work
       run: npm ci
 
     - name: Run Tests
