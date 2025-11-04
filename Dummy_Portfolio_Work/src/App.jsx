@@ -133,7 +133,7 @@ export default function Portfolio() {
       >
         <div className="container mx-auto px-6 text-center animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-slide-up">
-            Hi, I'm{' '}
+            Hi, I'm{'Chaitanya Shekhar Pandey'}
             <span className={darkMode ? 'text-teal-400' : 'text-blue-600'}>John Doe</span>
           </h1>
           <p
