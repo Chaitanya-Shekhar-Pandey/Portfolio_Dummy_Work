@@ -86,9 +86,9 @@ export default function Portfolio() {
                 darkMode ? 'bg-teal-500' : 'bg-blue-600'
               }`}
             >
-              <span className="text-white font-bold text-xl">JD</span>
+              <span className="text-white font-bold text-xl">CSP</span>
             </div>
-            <span className="text-xl font-bold">John Doe</span>
+            <span className="text-xl font-bold">Chaitanya Shekhar Pandey</span>
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
