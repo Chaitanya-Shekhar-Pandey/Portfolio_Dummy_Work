@@ -1,0 +1,44 @@
+name: React Portfolio CI/CD
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Set Up Node.Js Environment 
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+        cache: npm
+
+    - name: List files for debugging
+      run: ls -la ./Portfolio_Dummy_Work/Dummy_Portfolio_Work
+
+    - name: Install Dependencies
+      working-directory: ./Portfolio_Dummy_Work/Dummy_Portfolio_Work
+      run: npm ci
+
+    - name: Build Project
+      working-directory: ./Portfolio_Dummy_Work/Dummy_Portfolio_Work
+      run: npm run build
+
+    - name: Deploy to Github Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with: 
+        github_token: $ {{secrets.Repo_Secrets}}
+        publish_dir: ./Portfolio_Dummy_Work/Dummy_Portfolio_Work/dist
+
+      
+  
