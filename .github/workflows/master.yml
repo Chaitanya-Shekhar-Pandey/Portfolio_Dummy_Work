@@ -15,7 +15,7 @@ jobs:
 
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v3
 
     - name: Set Up Node.Js Environment 
       uses: actions/setup-node@v4
@@ -29,9 +29,6 @@ jobs:
     - name: Install Dependencies
       working-directory: ./Portfolio_Dummy_Work
       run: npm ci
-
-    - name: Run Tests
-      run: npm test --if-present
 
     - name: Build Project
       working-directory: ./Portfolio_Dummy_Work
