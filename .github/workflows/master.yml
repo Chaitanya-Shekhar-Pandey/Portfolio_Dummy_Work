@@ -26,25 +26,25 @@ jobs:
       run: |
         echo "Root directory:"
         ls -la
-        echo "Portfolio_Dummy_Work directory:"
-        ls -la Portfolio_Dummy_Work
+        echo "Dummy_Portfolio_Work directory:"
+        ls -la Dummy_Portfolio_Work
 
     - name: List files for debugging
       run: ls -la ./Portfolio_Dummy_Work/Dummy_Portfolio_Work
 
     - name: Install Dependencies
-      working-directory: ./Portfolio_Dummy_Work/Dummy_Portfolio_Work
+      working-directory: ./Dummy_Portfolio_Work
       run: npm ci
 
     - name: Build Project
-      working-directory: ./Portfolio_Dummy_Work/Dummy_Portfolio_Work
+      working-directory: ./Dummy_Portfolio_Work
       run: npm run build
 
     - name: Deploy to Github Pages
       uses: peaceiris/actions-gh-pages@v4
       with: 
         github_token: $ {{secrets.Repo_Secrets}}
-        publish_dir: ./Portfolio_Dummy_Work/Dummy_Portfolio_Work/dist
+        publish_dir: ./Dummy_Portfolio_Work/dist
 
       
   
