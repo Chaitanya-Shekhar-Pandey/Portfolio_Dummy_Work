@@ -17,11 +17,17 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v3
 
-    - name: Set Up Node.Js (without cache)
+    - name: Set Up Node.Js Environment
       uses: actions/setup-node@v4
       with:
         node-version: 20
-        cache: npm
+
+    - name: Show file tree for debugging
+      run: |
+        echo "Root directory:"
+        ls -la
+        echo "Portfolio_Dummy_Work directory:"
+        ls -la Portfolio_Dummy_Work
 
     - name: List files for debugging
       run: ls -la ./Portfolio_Dummy_Work/Dummy_Portfolio_Work
