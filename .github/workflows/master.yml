@@ -43,7 +43,7 @@ jobs:
     - name: Deploy to Github Pages
       uses: peaceiris/actions-gh-pages@v4
       with: 
-        github_token: $ {{secrets.GITHUB_TOKEN}}
+        github_token: ${{secrets.GITHUB_TOKEN}}
         publish_dir: ./Dummy_Portfolio_Work/dist
         publish_branch: gh-pages
         allow_empty_commit: false
