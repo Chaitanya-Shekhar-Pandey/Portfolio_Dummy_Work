@@ -30,7 +30,7 @@ jobs:
         ls -la Dummy_Portfolio_Work
 
     - name: List files for debugging
-      run: ls -la ./Portfolio_Dummy_Work/Dummy_Portfolio_Work
+      run: ls -la ./Dummy_Portfolio_Work
 
     - name: Install Dependencies
       working-directory: ./Dummy_Portfolio_Work
