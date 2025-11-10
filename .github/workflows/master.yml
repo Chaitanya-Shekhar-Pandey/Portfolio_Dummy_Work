@@ -40,6 +40,10 @@ jobs:
       working-directory: ./Dummy_Portfolio_Work
       run: npm run build
 
+    - name: Run Tests
+      working-directory: ./Dummy_Portfolio_Work
+      run: npm test
+
     - name: Deploy to Github Pages
       uses: peaceiris/actions-gh-pages@v4
       with: 
