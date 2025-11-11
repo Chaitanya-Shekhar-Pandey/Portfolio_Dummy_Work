@@ -133,14 +133,14 @@ export default function Portfolio() {
       >
         <div className="container mx-auto px-6 text-center animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-slide-up">
-            Welcome, I'm{'Chaitanya Shekhar Pandey'}
-            <span className={darkMode ? 'text-teal-400' : 'text-blue-600'}>John Doe</span>
+            Welcome, I'm
+            <span className={darkMode ? 'text-teal-400' : 'text-blue-600'}>Chaitanya Shekhar Pandey</span>
           </h1>
           <p
             className="text-xl md:text-2xl mb-8 text-gray-600 dark:text-gray-300 animate-slide-up"
             style={{ animationDelay: '0.1s' }}
           >
-            A Full Stack Developer
+            A Full Stack Developer and a DevOps Engineer
           </p>
         </div>
       </section>
@@ -307,7 +307,7 @@ export default function Portfolio() {
               </a>
             </div>
 
-            <p className="text-gray-400 text-sm">© 2025 John Doe. All rights reserved.</p>
+            <p className="text-gray-400 text-sm">© 2025 Chaitanya Shekhar Pandey. All rights reserved.</p>
           </div>
         </div>
       </footer>
