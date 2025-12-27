@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Portfolio_Dummy_Work
+  annotations:
+    github.com/project-slug: Chaitanya-Shekhar-Pandey/Portfolio_Dummy_Work
+spec:
+  type: other
+  lifecycle: unknown
+  owner: Chaitanya
